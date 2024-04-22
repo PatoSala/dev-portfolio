@@ -1,0 +1,11 @@
+.subtitle {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+    .subtitle {
+        font-size: 3rem;
+    }
+}

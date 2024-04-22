@@ -1,0 +1,19 @@
+.greeting {
+    font-size: 2rem;
+    color: #95B0B499;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+    .greeting {
+        font-size: 3rem;
+    }
+    .title {
+        font-size: 4.5rem;
+    }
+}

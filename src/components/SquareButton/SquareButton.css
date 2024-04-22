@@ -1,0 +1,27 @@
+.square-button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    color: #FFF;
+    background: #000;
+    border: 0 solid #e5e7eb;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+    transition: 0.3s;
+    border-radius: 0;
+    outline: none;
+}
+
+.square-button:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background: #000000b7;
+}
+
+@media (min-width: 1024px) {
+    .square-button {
+        font-size: 1.25rem;
+    }
+}
