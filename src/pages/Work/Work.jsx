@@ -1,5 +1,4 @@
 import './Work.css'
-
 import Section from "../../components/Section/Section"
 import Subtitle from "../../components/Subtitle/Subtitle"
 import Project from '../../components/Project/Project'
@@ -49,7 +48,7 @@ export default function Work() {
     ]
     return (
         <Section>
-            <Subtitle children="Things I built." />
+            <Subtitle children="Selected Works." />
             <div className='projects-container'>
                 {projects.map(project => (
                     <Project key={project.name} projectData={project} />

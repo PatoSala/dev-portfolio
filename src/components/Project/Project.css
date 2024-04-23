@@ -1,10 +1,16 @@
 .project {
-    width: 50%;
-    padding-right: 1rem;
+    width: 100%;
     padding-bottom: 1rem;
     box-sizing: border-box;
     cursor: pointer;
     transition: 0.3s;
+}
+
+@media (min-width: 1024px) {
+    .project {
+        width: 50%;
+        padding-right: 1rem;
+    }
 }
 
 .box-shadow-container {
