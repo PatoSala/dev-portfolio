@@ -1,0 +1,25 @@
+.input-container {
+    margin-bottom: 30px;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    color: var(--black);
+}
+
+.input {
+    background: transparent;
+    border: 1px solid rgb(222, 213, 213);
+    transition: border 0.3s ease 0s;
+    padding: 1.1875rem 0px 1.1875rem 0.9375rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    resize: vertical;
+}
+
+.input:focus {
+    outline: 3px solid #1065ed;
+}

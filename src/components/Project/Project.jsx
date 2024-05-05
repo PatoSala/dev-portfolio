@@ -1,4 +1,4 @@
-import './Project.css'
+import styles from './styles.module.css'
 
 export default function Project({ projectData }) {
 
@@ -7,8 +7,8 @@ export default function Project({ projectData }) {
     }
 
     return (
-        <div className="project" onClick={handleOnClick}>
-            <div className='box-shadow-container' style={{ background: projectData.bgColor, padding: '2.5rem' }}>
+        <div className={styles.project} onClick={handleOnClick}>
+            <div className={styles['box-shadow-container']} style={{ background: projectData.bgColor, padding: '2.5rem' }}>
                 <h3>{projectData.name}</h3>
                 <p>{projectData.desc}</p>
                 <div style={{
@@ -17,7 +17,7 @@ export default function Project({ projectData }) {
                     justifyContent: 'flex-start'
                 }}>
                     {projectData.techStack.map(tech => (
-                        <span className='tech-name' style={{ background: projectData.bgColor }}>{tech}</span>
+                        <span className={styles['tech-name']} style={{ background: projectData.bgColor }}>{tech}</span>
                     ))}
                 </div>
             </div>

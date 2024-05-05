@@ -48,7 +48,9 @@ export default function Work() {
     ]
     return (
         <Section>
-            <Subtitle children="Selected Works." />
+            <Subtitle>
+                Selected <span style={{ color: '#1065ed'}}>Works</span>
+            </Subtitle>
             <div className='projects-container'>
                 {projects.map(project => (
                     <Project key={project.name} projectData={project} />
