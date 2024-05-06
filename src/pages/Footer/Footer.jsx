@@ -3,7 +3,7 @@ import Section from '../../components/Section/Section'
 
 export default function Footer() {
     return (
-        <Section bgColor={'#242237'}>
+        <Section bgColor={'#3C3744'}>
             <footer>
                 footer
             </footer>

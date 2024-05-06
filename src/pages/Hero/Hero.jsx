@@ -12,7 +12,7 @@ export default function Hero() {
 
     return (
         <>
-            <Section>
+            <Section /* bgColor={"#9DBBF8"} */>
                 <Title>
                     <span className='greeting' style={{ display: 'block' }}>Pato Sala.</span>
                     <span style={{ display: 'block' }}>Full stack mobile &</span>
