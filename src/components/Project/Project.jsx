@@ -17,7 +17,7 @@ export default function Project({ projectData }) {
                     justifyContent: 'flex-start'
                 }}>
                     {projectData.techStack.map(tech => (
-                        <span className={styles['tech-name']} style={{ background: projectData.bgColor }}>{tech}</span>
+                        <span key={tech} className={styles['tech-name']} style={{ background: projectData.bgColor }}>{tech}</span>
                     ))}
                 </div>
             </div>

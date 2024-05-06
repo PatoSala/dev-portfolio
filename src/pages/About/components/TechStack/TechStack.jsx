@@ -56,7 +56,7 @@ export default function TechStack() {
             <h3>Tech Stack</h3>
             <ul>
                 {techStack.map(tech => (
-                    <li className={styles['tech-name']}>
+                    <li className={styles['tech-name']} key={tech.name}>
                         <img src={tech.icon} alt={tech.name} width={44}/>
                         {tech.name}
                     </li>

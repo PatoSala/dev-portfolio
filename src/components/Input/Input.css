@@ -4,9 +4,8 @@
 
 .label {
     font-weight: 600;
-    font-size: 0.9375rem;
+    font-size: 1.05rem;
     margin-bottom: 0.9375rem;
-    color: var(--black);
 }
 
 .input {
@@ -18,8 +17,26 @@
     box-sizing: border-box;
     width: 100%;
     resize: vertical;
+    border-radius: 0px;
 }
+
+
 
 .input:focus {
     outline: 3px solid #1065ed;
+}
+
+.input.error {
+    outline: 1px solid #ff5558;
+}
+
+.input:hover {
+    border: 1px solid #1065ed;
+    transition: 0.3s;
+    outline: none;
+}
+
+p.error {
+    color: #ff5558;
+    font-weight: 600;
 }
