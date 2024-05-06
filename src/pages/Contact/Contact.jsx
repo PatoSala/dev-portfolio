@@ -1,6 +1,9 @@
 import './Contact.css'
 import { useState } from 'react'
+
+// #region Utils
 import validations from './utils/validations'
+
 // #region Components
 import Section from '../../components/Section/Section'
 import Subtitle from '../../components/Subtitle/Subtitle'
@@ -21,17 +24,18 @@ export default function Contact() {
     })
 
     const handleOnChange = (e) => {
-        const validationResults = validations({ name: e.target.name, value: e.target.value })
+        const validationResults = validations({
+            name: e.target.name,
+            value: e.target.value
+        })
 
         if (validationResults) {
-            e.target.classList.add('error')
             setErrors({
                 ...errors,
                 [e.target.name]: validationResults
             })
         } else {
             if (errors[e.target.name]) {
-                e.target.classList.remove('error')
                 setErrors({
                     ...errors,
                     [e.target.name]: ''
