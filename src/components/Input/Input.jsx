@@ -1,7 +1,6 @@
 import styles from './styles.module.css'
 
 export default function Input({ label, type, placeholder, name, value, onChange, errors }) {
-
     return (
         <div className={styles['input-container']}>
             <h3 className={styles['label']}>{label}</h3>
@@ -12,6 +11,9 @@ export default function Input({ label, type, placeholder, name, value, onChange,
                 value={value}
                 name={name}
                 onChange={(e) => onChange(e)}
+                style={{
+                    minHeight: '200px'
+                }}
             />
             : <input
                 className={`${styles['input']} ${errors ? styles['error'] : ''}`}

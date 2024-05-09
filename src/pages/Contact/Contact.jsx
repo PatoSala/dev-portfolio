@@ -51,11 +51,30 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        errors.keys().forEach((key) => {
-            if (errors[key]) {
-                e.target[key].classList.add('error')
+        let fieldsErrors = {}
+
+        /* #1 Check every form field */
+        Object.keys(formData).forEach(field => {
+            let validationResults = validations({
+                name: field,
+                value: formData[field]
+            })
+            if (validationResults) {
+                fieldsErrors[field] = validationResults
             }
         })
+        
+        setErrors(fieldsErrors)
+
+        /* Check if errors exist */
+        Object.keys(errors).forEach((key) => {
+            if (errors[key].length > 0) {
+                /* Prevent submit */
+                return
+            }
+        })
+
+        /* Submit form */
     }
     return (
         <Section>

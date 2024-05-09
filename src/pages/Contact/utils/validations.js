@@ -1,5 +1,4 @@
 const validations = ({ name, value }) => {
-    console.log('RUNNING VALIDATIONS');
     if (value.length === 0) {
         return `Field is required`
     } else if (
@@ -8,6 +7,8 @@ const validations = ({ name, value }) => {
     ) {
         return 'Invalid email'
     }
+
+    return null
 }
 
 export default validations

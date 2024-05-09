@@ -34,5 +34,6 @@
 
 p.error {
     color: #ff5558;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: smaller;
 }
